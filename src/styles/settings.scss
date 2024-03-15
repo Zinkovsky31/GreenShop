@@ -1,0 +1,19 @@
+@use 'vuetify/settings' with (
+  $grid-breakpoints: (
+    'xs': 0,
+    'sm': 600px,
+    'md': 1280px,
+    'lg': 1440px,
+    'xl': 1920px,
+    'xxl': 2560px,
+  ),
+
+  $container-max-widths: (
+    //'xs': null,
+    //'sm': null,
+    //'md': null,
+    //'lg': null,
+    'xl': calc(1920px - 88px),
+    'xxl': calc(1920px - 88px),
+  ),
+);

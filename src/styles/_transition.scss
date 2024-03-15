@@ -1,0 +1,22 @@
+.route-enter-active,
+.route-leave-active {
+  @include transition();
+  filter: blur(0px);
+}
+
+.route-enter,
+.route-leave-to {
+  opacity: 0;
+  filter: blur(16px);
+  background: #5A5A5A;
+}
+
+.fade-in-enter-active,
+.fade-in-leave-active {
+  @include transition();
+}
+
+.fade-in-enter-from,
+.fade-in-leave-to {
+  opacity: 0;
+}

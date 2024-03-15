@@ -1,0 +1,62 @@
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+  overflow: hidden;
+}
+
+.z-index-4 {
+  z-index: 4;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.rotate-right {
+  transform: rotate(45deg);
+}
+
+.rotate-left {
+  transform: rotate(-135deg);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid $black50;
+  border-radius: 50%;
+
+  @include up($xl) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.arrow-icon {
+  @include up($xl) {
+    scale: 1.4;
+  }
+}
+
+.share-social-icon {
+  width: 20px;
+  height: 20px;
+
+  @include up($xl) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.line-height-100 {
+  line-height: 100%;
+}

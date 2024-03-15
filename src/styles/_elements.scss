@@ -1,0 +1,148 @@
+body {
+  font-family: $body-font-family;
+  font-weight: normal;
+  font-style: normal;
+  font-size: $default-font-size;
+  line-height: $default-line-height;
+
+  background-color: $white;
+
+  @include up($xl) {
+    font-size: $default-font-size-md;
+    line-height: $default-line-height-md;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    @include transition();
+    box-shadow: 0 1px 0 0 $white;
+
+    &.black {
+      box-shadow: 0 1px 0 0 $black;
+    }
+  }
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+input {
+  @include transition();
+  padding: 16px 28px;
+  border: 1px solid $black;
+  border-radius: 1000px;
+
+  @include up($xl) {
+    padding: 23px 36px;
+  }
+
+  &:focus {
+    @include transition();
+  }
+
+  &::placeholder {
+    color: $light-grey;
+  }
+
+  &[type='text'],
+  &[type='tel'] {
+    font-size: 16px;
+  }
+}
+
+.logo {
+  box-shadow: none !important;
+
+  svg {
+    width: 185px;
+    height: 44px;
+  }
+
+  @include up($md) {
+    svg {
+      width: 185px;
+      height: 44px;
+    }
+  }
+
+  @include up($xl) {
+    svg {
+      //width: 75px;
+      width: 217px;
+      height: 72px;
+    }
+  }
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 34px;
+  height: 34px;
+  background: $white;
+  border-radius: 50%;
+
+  i {
+    width: 18px;
+    height: 1px;
+    background: $black;
+  }
+
+  &.close {
+    gap: 0;
+    position: relative;
+
+    i {
+      position: absolute;
+
+      &:first-child {
+        rotate: 45deg;
+      }
+
+      &:last-child {
+        rotate: -45deg;
+      }
+    }
+  }
+}
+
+.playnext-logo {
+  box-shadow: none !important;
+
+  svg {
+    width: 85px;
+    height: 20px;
+
+    @include up($md) {
+      width: 140px;
+      height: 33px;
+    }
+
+    &:hover {
+      path {
+        @include transition();
+        opacity: .85;
+      }
+    }
+  }
+}
+
+.market-circle {
+  display: block;
+
+  width: 6px;
+  height: 6px;
+  border-radius: 25px;
+
+  background-color: $light-grey;
+}

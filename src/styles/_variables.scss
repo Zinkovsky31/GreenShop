@@ -1,0 +1,64 @@
+//colors
+$black: rgb(61, 61, 61);;
+$black50: rgba(25, 25, 25, 0.5);
+
+$white: #FFFFFF;
+$white8: rgba(255, 255, 255, 0.08);
+$white50: rgba(255, 255, 255, 0.5);
+
+$green: #46A358;
+$light-green:  rgba(70, 163, 88, 0.3);
+$grey: #727272;
+$light-blue: #DCE2E8;
+$light-grey:  #FBFBFB;
+$light-green: #DAEBEB;
+
+$light-black: #262626;
+
+$dark-grey:#5C5B64;
+$dark-blue: #2A313C;
+$dark-green: #243232;
+
+$blackout-above: linear-gradient(180deg, rgba(0, 48, 111, 0) 31.77%, #00266F 99.7%);
+$blackout-from-below: linear-gradient(180deg, #00306F 0%, rgba(0, 48, 111, 0) 100%);
+
+//fonts
+$body-font-family: Gilroy, sans-serif;
+
+$default-font-size: 16px;
+$default-line-height: 140%;
+
+$default-font-size-md: 24px;
+$default-line-height-md: 150%;
+$default-font-weight: normal;
+
+//breakpoints
+$sm: 760px;
+$xsm: 1024px;
+$md: 1280px;
+$lg: 1440px;
+$xl: 1920px;
+$xxl: 2560px;
+
+/* Vuetify Settings */
+/*@use 'vuetify/settings' with (
+  $grid-breakpoints: (
+    'xs': 0,
+    'sm': 600px,
+    'md': 1280px,
+    'lg': 1440px,
+    'xl': 1920px,
+    'xxl': 2560px,
+  ),
+
+  $container-max-widths: (
+    //'xs': null,
+    //'sm': null,
+    //'md': null,
+    //'lg': null,
+    'xl': calc(1920px - 88px),
+    'xxl': calc(1920px - 88px),
+  ),
+);*/
+
+@import 'mixins';
